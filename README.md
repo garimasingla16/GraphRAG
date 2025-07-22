@@ -51,23 +51,13 @@ pip install -r requirements.txt
 ## Features
 
 - Create a RAG from PDFs
-- Connect to Zotero to retrival PDFs
 - Graph visulation through Neo4j Browser
 - All data are stored locally, supporting llama.cpp and Ollama local LLM
 
 ## Installation
 
 <big>**Step1**</big>, clone this project and install dependencies
- ```
- git clone https://github.com/zjkhurry/Graph-RAG.git
- cd Graph-RAG
- pip install -r requitements.txt
- ```
- Copy and midofy [config.ini](./config.ini)
- ```
- cp config.ini.bak config.ini
- ```
-
+```
 <big>**Step2**</big>, you need to install Neo4j. Download [Neo4j Desktop](https://neo4j.com/download/) or Mac can install with homebrew
  ```
  brew install --cask neo4j
