@@ -47,3 +47,43 @@ Traditional fraud detection struggles to capture complex relationships across tr
 git clone https://github.com/yourusername/graph-rag-fraud.git
 cd graph-rag-fraud
 pip install -r requirements.txt
+
+## Features
+
+- Create a RAG from PDFs
+- Connect to Zotero to retrival PDFs
+- Graph visulation through Neo4j Browser
+- All data are stored locally, supporting llama.cpp and Ollama local LLM
+
+## Installation
+
+<big>**Step1**</big>, clone this project and install dependencies
+ ```
+ git clone https://github.com/zjkhurry/Graph-RAG.git
+ cd Graph-RAG
+ pip install -r requitements.txt
+ ```
+ Copy and midofy [config.ini](./config.ini)
+ ```
+ cp config.ini.bak config.ini
+ ```
+
+<big>**Step2**</big>, you need to install Neo4j. Download [Neo4j Desktop](https://neo4j.com/download/) or Mac can install with homebrew
+ ```
+ brew install --cask neo4j
+ ```
+ 1. Launch Neo4j Desktop, create a New Project and add a new Graph DBMS.
+ ![avatar](res/1.png) ![avatar](res/2.png) ![avatar](res/3.png)
+ 1. Enter the password into the [config.ini](./config.ini) - Neo4j - password. Then click on the Graph DBMS created in the last step and install [APOC plugin](https://github.com/neo4j/apoc).
+ ![avatar](res/4.png)
+ 1. Start the Graph DBMS.
+
+<big>**Step3**</big> (optional) Set up [Ollama](https://ollama.com) or [llama.cpp](https://github.com/ggerganov/llama.cpp) to use local LLM.
+ - For Ollama, download the app [here](https://ollama.com), run Ollama and then
+ ```
+ ollama pull interstellarninja/hermes-2-pro-llama-3-8b
+ ollama pull mxbai-embed-large
+ ```
+ *P.S. hermers-2-pro has a better sepport to function calling than original llama3.*
+ - For llama.cpp, follow the instruction [here](https://github.com/ggerganov/llama.cpp) to build and run llama.cpp server.
+
