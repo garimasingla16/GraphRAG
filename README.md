@@ -56,9 +56,9 @@ pip install -r requirements.txt
 
 ## Installation
 
-<big>**Step1**</big>, clone this project and install dependencies
-<big>**Step2**</big>, you need to install Neo4j. Download [Neo4j Desktop](https://neo4j.com/download/) or Mac can install with homebrew
- ```
+ clone this project and install dependencies
+ you need to install Neo4j. Download [Neo4j Desktop](https://neo4j.com/download/) or Mac can install with homebrew
+ 
  brew install --cask neo4j
  ```
  1. Launch Neo4j Desktop, create a New Project and add a new Graph DBMS.
