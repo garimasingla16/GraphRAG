@@ -57,15 +57,12 @@ pip install -r requirements.txt
 ## Installation
 
 <big>**Step1**</big>, clone this project and install dependencies
-```
 <big>**Step2**</big>, you need to install Neo4j. Download [Neo4j Desktop](https://neo4j.com/download/) or Mac can install with homebrew
  ```
  brew install --cask neo4j
  ```
  1. Launch Neo4j Desktop, create a New Project and add a new Graph DBMS.
- ![avatar](res/1.png) ![avatar](res/2.png) ![avatar](res/3.png)
  1. Enter the password into the [config.ini](./config.ini) - Neo4j - password. Then click on the Graph DBMS created in the last step and install [APOC plugin](https://github.com/neo4j/apoc).
- ![avatar](res/4.png)
  1. Start the Graph DBMS.
 
 <big>**Step3**</big> (optional) Set up [Ollama](https://ollama.com) or [llama.cpp](https://github.com/ggerganov/llama.cpp) to use local LLM.
