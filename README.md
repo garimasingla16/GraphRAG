@@ -68,8 +68,7 @@ pip install -r requirements.txt
 <big>**Step3**</big> (optional) Set up [Ollama](https://ollama.com) or [llama.cpp](https://github.com/ggerganov/llama.cpp) to use local LLM.
  - For Ollama, download the app [here](https://ollama.com), run Ollama and then
  ```
- ollama pull interstellarninja/hermes-2-pro-llama-3-8b
- ollama pull mxbai-embed-large
+ ollama run llama3
  ```
  *P.S. hermers-2-pro has a better sepport to function calling than original llama3.*
  - For llama.cpp, follow the instruction [here](https://github.com/ggerganov/llama.cpp) to build and run llama.cpp server.
